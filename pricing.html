@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoFix Car Services</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0ec698;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .pricing-plan {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .plan {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  .plan h3 {
+    color: violet;
+  }
+  .plan p {
+    color: #666;
+  }
+
+  button {
+     background-color: violet;
+     border: none;
+     color: black;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     margin: 4px 2px;
+     cursor: pointer;
+     border-radius: 16px;
+  }
+
+.head{
+   color:red;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+ <div class="head">
+    <h1 align="center"><em>PRICING PLANS </em></h1>
+ </div>
+  <div class="pricing-plan">
+    <div class="plan">
+      <h3><em>BASIC SERVICES</em></h3>
+      <p>4000 Rs</p>
+      <ul>
+        <li><em>Oil Change</em></li>
+        <li><em>Tire Rotation</em></li>
+        <li><em>Fluid check</em></li>
+      </ul>
+      <button onclick="selectPlan('Basic Service')">Select</button>
+    </div>
+    <div class="plan">
+      <h3><em>STANDARD SERVICES</em></h3>
+      <p>5,500 Rs</p>
+      <ul>
+        <li><em>Basic Service +</em></li>
+        <li><em>Brake Inspection</em></li>
+        <li><em>Engine Tune-Up</em></li>
+      </ul>
+      <button onclick="selectPlan('Standard Service')">Select</button>
+    </div>
+    <div class="plan">
+      <h3><em>PREMIUM SERVICES</em></h3>
+      <p>7000 Rs</p>
+      <ul>
+        <li><em>Standard Service +</em></li>
+        <li><em>Full Vehicle Inspection</em></li>
+        <li><em>Wheel Alignment</em></li>
+      </ul>
+      <button onclick="selectPlan('Premium Service')">Select</button>
+    </div>
+  </div>
+  <p id="selected-plan"></p>
+</div>
+
+<script>
+  function selectPlan(plan) {
+    document.getElementById('selected-plan').innerText = 'You selected: ' + plan;
+  }
+</script>
+
+</body>
+</html>

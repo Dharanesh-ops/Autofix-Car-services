@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Autofix - Auto Maintenance & Repair Service</title>
+  <meta name="title" content="Autofix - Auto Maintenance & Repair Service">
+  <meta name="description" content="This is a vehicle repair html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon font
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+
+  <style>
+    
+    .container1 {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background-color:#431489
+    
+    }
+    .pricing-plan {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .plan {
+      flex: 1;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #c5ce17;
+      box-shadow: 0 0 5px rgba(161, 42, 42, 0.1);
+    }
+    .plan h3 {
+      color: violet;
+    }
+    .plan p {
+      color: #ad7070;
+    }
+  
+    button {
+       background-color: violet;
+       border: none;
+       color: black;
+       padding: 10px 20px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       margin: 4px 2px;
+       cursor: pointer;
+       border-radius: 16px;
+    }
+  
+  .head{
+     color:red;
+  }
+  
+  .text{
+    color:red;
+
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./images/logo.png" width="128" height="63" alt="autofix home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#R" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#C" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#D" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#E" class="navbar-link">Projects</a>
+          </li>
+          <li>
+            <a href="./Signup.html" target="_blank" class="navbar-link">SignUp</a>
+          </li>
+          <li>
+            <a href="./Contact.html" target="_blank" class="navbar-link">Contact</a>
+          </li>
+          <li>
+            <a href="#I" class="navbar-link">Pricings</a>
+          </li>
+          <li>
+            <a href="./Login.html" target="_blank" class="navbar-link">Login</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./images/hero-bg.jpg')" id="R">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle :dark">We have talented engineers & mechanics</p>
+
+            <h1 class="h1 section-title">Auto Maintenance & Repair Service</h1>
+
+            <p class="section-text">
+              Welcome to Autofix, where the road to restoration 
+              begins. Our passion drives us to deliver exceptional service, from minor
+               fixes to major overhauls. Trust in our expertise to breathe new life 
+               into your vehicle, ensuring every mile ahead is smooth and worry-free. 
+            </p>
+
+            <a href="#D" class="btn">
+              <span class="span">Our Services</span>
+
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner" style="--width: 1228; --height: 789;">
+            <img src="./images/hero-banner.png" width="1228" height="789" alt="red motor vehicle"
+              class="move-anim">
+          </figure>
+
+        </div>
+     </section>
+     
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('./images/service-bg.jpg')" id="D">
+        <div class="container">
+
+          <p class="section-subtitle :light" id="service-label">Our services</p>
+
+          <h2 class="h2 section-title">We Provide Great Services For your Vehicle</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./images/services-1.png" width="110" height="110" loading="lazy" alt="Engine Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Engine Repair</h3>
+
+                <p class="card-text">
+                  Embark on a journey of precision and expertise with our                         
+                  engine repair services. From diagnosing the heart of your 
+                  vehicle to meticulously restoring its power, our team of 
+                  skilled technicians is dedicated to reviving every piston, 
+                  crankshaft, and valve to peak performance. 
+
+                <a href="./asets/enginerepair.html" target="_blank" class="btn-link">Read more</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./images/services-2.png" width="110" height="110" loading="lazy" alt="Brake Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Brake Repair</h3>
+
+                <p class="card-text">
+                  Welcome to the brake repair sanctuary, where safety meets 
+                  precision and every stop is a testament to our dedication. 
+                  Step into a realm where the symphony of screeching brakes 
+                  transforms into a harmony of smooth deceleration
+                </p>
+
+                <a href="./asets/brakerepair.html" target="_blank" class="btn-link">Read more</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./images/services-3.png" width="110" height="110" loading="lazy" alt="Tire Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Tire Repair</h3>
+
+                <p class="card-text">
+                  Embark on a journey of tire renaissance with our tire repair 
+                  services, where every tread tells a story of resilience and 
+                  rejuvenation. Enter a realm where worn rubber transforms into 
+                  a canvas of strength, grip, and reliability. Our seasoned artisans 
+                  meticulously assess and restore each tire, ensuring every rotation is 
+                  met with steadfast stability and unwavering traction
+                </p>
+
+                <a href="./asets/tirerepair.html" target="_blank" class="btn-link">Read more</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./images/services-4.png" width="110" height="110" loading="lazy"
+                    alt="Battery Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Battery Repair</h3>
+
+                <p class="card-text">
+                  Welcome to the sanctuary of electrical restoration, where every 
+                  volt counts and every connection sparks renewed vitality. Step 
+                  into a realm where the heartbeat of your vehicle, the battery, 
+                  undergoes a meticulous revival, ensuring each ignition is met 
+                  with unwavering power.
+                </p>
+
+                <a href="./asets/batteryrepair.html" target="_blank" class="btn-link">Read more</a>
+
+              </div>
+            </li>
+
+            <li class="service-banner">
+              <img src="./images/services-5.png" width="646" height="380" loading="lazy" alt="Red Car"
+                class="move-anim">
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./images/services-6.png" width="110" height="110" loading="lazy"
+                    alt="Steering Repair">
+                </figure>
+
+                <h3 class="h3 card-title">Steering Repair</h3>
+
+                <p class="card-text">
+                  Enter the realm where precision meets control, where every turn 
+                  becomes a symphony of seamless motion. Welcome to our sanctuary of 
+                  steering repair, where the art of guidance meets the science of precision 
+                  engineering. Our skilled craftsmen meticulously diagnose, refine, and restore 
+                  every aspect of your steering system
+                </p>
+
+                <a href="./asets/steeringrepair.html" target="_blank" class="btn-link">Read more</a>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about has-before" aria-labelledby="about-label" id ="C">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./images/about-banner.png" width="540" height="540" loading="lazy"
+              alt="vehicle repire equipments" class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle :dark">About Us</p>
+
+            <h2 class="h2 section-title">We’re Commited to Meet the quality</h2>
+
+            <p class="section-text">
+              Welcome to AutoFix Car Repair Service, where automotive care meets 
+              unparalleled expertise. With a legacy of excellence spanning [number of years] years, 
+              we have proudly served our community as the premier destination for all automotive repair needs. 
+              Our commitment to quality craftsmanship, cutting-edge technology, and customer satisfaction is at 
+              the core of everything we do.
+            </p>
+
+          
+            <ul class="about-list">
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">8K+</strong> Happy Clients
+                </p>
+              </li>
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">22+</strong> Instruments
+                </p>
+              </li>
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">50+</strong> Years in market
+                </p>
+              </li>
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">99%</strong> Projects completed
+                </p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #WORK
+      -->
+
+      <section class="section work" aria-labelledby="work-label" id="E">
+        <div class="container">
+
+          <p class="section-subtitle :light" id="work-label">Our Work</p>
+
+          <h2 class="h2 section-title">Latest projects we have done</h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 406;">
+                  <img src="./images/work-1.jpg" width="350" height="406" loading="lazy" alt="Engine Repair"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Auto Repair</p>
+
+                  <h3 class="h3 card-title">Engine Repair</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 406;">
+                  <img src="./images/work-2.jpg" width="350" height="406" loading="lazy" alt="Car Tyre change"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Auto Repair</p>
+
+                  <h3 class="h3 card-title">Car Tyre change</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="work-card">
+
+                <figure class="card-banner img-holder" style="--width: 350; --height: 406;">
+                  <img src="./images/work-3.jpg" width="350" height="406" loading="lazy" alt="Battery Adjust"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Auto Repair</p>
+
+                  <h3 class="h3 card-title">Battery Adjust</h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+   <section id="I">
+    <div class="container1">
+      <div class="head">
+         <h1 align="center"><em>PRICING PLANS </em></h1>
+      </div>
+       <div class="pricing-plan">
+         <div class="plan">
+           <h3><em>BASIC SERVICES</em></h3>
+           <p>4000 Rs</p>
+           <ul>
+             <li><em>Oil Change</em></li>
+             <li><em>Tire Rotation</em></li>
+             <li><em>Fluid check</em></li>
+           </ul>
+           <button onclick="selectPlan('Basic Service')">Select</button>
+         </div>
+         <div class="plan">
+           <h3><em>STANDARD SERVICES</em></h3>
+           <p>5,500 Rs</p>
+           <ul>
+             <li><em>Basic Service +</em></li>
+             <li><em>Brake Inspection</em></li>
+             <li><em>Engine Tune-Up</em></li>
+           </ul>
+           <button onclick="selectPlan('Standard Service')">Select</button>
+         </div>
+         <div class="plan">
+           <h3><em>PREMIUM SERVICES</em></h3>
+           <p>7000 Rs</p>
+           <ul>
+             <li><em>Standard Service +</em></li>
+             <li><em>Full Vehicle Inspection</em></li>
+             <li><em>Wheel Alignment</em></li>
+           </ul>
+           <button onclick="selectPlan('Premium Service')">Select</button>
+         </div>
+       </div>
+       <p id="selected-plan"></p>
+     </div>
+   </section>
+     <script>
+       function selectPlan(plan) {
+         document.getElementById('selected-plan').innerText = 'You selected: ' + plan;
+       }
+     </script>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./images/logo.png" width="128" height="63" alt="autofix home">
+          </a>
+
+          <p class="footer-text">
+            Join us on the road to reliability, where every 
+            repair is a testament to our commitment to excellence."
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./images/twitter.svg" alt="twitter">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="p">Monday – Saturday</p>
+
+            <span class="span">12.00 – 14.45</span>
+          </li>
+
+          <li>
+            <p class="p">Sunday – Thursday</p>
+
+            <span class="span">17.30 – 00.00</span>
+          </li>
+
+          <li>
+            <p class="p">Friday – Saturday</p>
+
+            <span class="span">12.00 – 14.45</span>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3" id="F">Contact Info</p>
+          </li>
+
+          <li>
+            <a href="tel:+01234567890" class="footer-link">
+              <span class="material-symbols-rounded">call</span>
+
+              <span class="span">+01 2 3456 7890</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:info@autofix.com" class="footer-link">
+              <span class="material-symbols-rounded">mail</span>
+
+              <span class="span">info@autofix.com</span>
+            </a>
+          </li>
+
+          <li>
+            <address class="footer-link address">
+              <span class="material-symbols-rounded">location_on</span>
+
+              <span class="span">21 King Street Melbourne, 3000, Australia</span>
+            </address>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <img src="./images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
+        class="shape shape-3 move-anim">
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">Copyright 2024, Autofix All Rights Reserved.</p>
+
+        <img src="./images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
+          class="shape shape-2">
+
+        <img src="./images/footer-shape-1.png" width="805" height="652" loading="lazy" alt="Red Car"
+          class="shape shape-1 move-anim">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
